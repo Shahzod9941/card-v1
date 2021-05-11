@@ -24,16 +24,20 @@
 
 	<div class="container mt-3 mb-3">
         <div class="row">
+            
             <div class="col-md-2 col-sm-4 col-6">
                 <div class="product">
                     <div class="image">
                     <img src="../modal/img1.jpg" alt="">
                 </div>
                 <div class="info">
-                    <p>Название товара</p>
+                    <p>Монитор АОС QP129034</p>
                     <div class="info-price">
-                        <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <div class="prices">
+                            <p class="current-price">999 смн </p>
+                            <p class="real-price"><s>899</s> смн</sapn>
+                        </div>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
@@ -48,7 +52,7 @@
                     <p>Название товара</p>
                     <div class="info-price">
                         <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
@@ -63,7 +67,7 @@
                     <p>Название товара</p>
                     <div class="info-price">
                         <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
@@ -78,7 +82,7 @@
                     <p>Название товара</p>
                     <div class="info-price">
                         <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
@@ -93,7 +97,7 @@
                     <p>Название товара</p>
                     <div class="info-price">
                         <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
@@ -108,7 +112,7 @@
                     <p>Название товара</p>
                     <div class="info-price">
                         <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
@@ -123,7 +127,7 @@
                     <p>Название товара</p>
                     <div class="info-price">
                         <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
@@ -138,13 +142,21 @@
                     <p>Название товара</p>
                     <div class="info-price">
                         <div class="price">100$</div>
-                        <button class="see-more"><i class="fas fa-eye"></i></button>
+                        <button class="view"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 </div>
             </div>
         </div>
     </div>
-	
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="./matchheight.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.product').matchHeight();
+        });
+    </script>
 </body>
 </html>

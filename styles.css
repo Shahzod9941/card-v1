@@ -3,7 +3,7 @@
 }
 
 .col-md-2{
-    padding: 2px;
+    padding: 4px;
     margin: 0;
 }
 .product{
@@ -28,45 +28,62 @@
 }
 
 .info p{
-    max-width: 90px;
+    /* max-width: 90px; */
     padding: 0;
     margin: 0;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 21px;
+    font-size: 14px;
 }
 
 .info-price{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    text-align: center;
+    text-align: right;
     padding: 10px;
+    line-height: 1;
 }
 
-.see-more{
+.prices{
+    justify-content: start;
+}
+.current-price{
+    font-size: 17px;
+    font-weight: bolder;
+}
+.real-price{
+    font-size: 14px;
+}
+
+.view{
     border: none;
     width: 40px;
     height: 40px;
     justify-content: center;
     text-align: center;
-    background-color: rgb(153, 233, 115);
+    background-color: rgb(179, 179, 179);
     color: #fff;
     border-radius: 10px;
 }
 
+.view:hover{
+    background-color: rgb(135, 135, 135);
+}
 
 @media (max-width: 408px) {
     .info p{
-        max-width: 90px;
         padding: 0;
         margin: 0;
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 15px;
+        font-size: 13px;
+    }
+    .container{
+        padding: 30px;
     }
   }
 
-@media (min-width: 992px){
+  @media (min-width: 768px) and (max-width: 991px) {
 
 }
